@@ -32,7 +32,7 @@ class Smtp:
     def enviar_email(self, destinatario, encaminhado, anexo):
         try:
             msg = MIMEMultipart()
-            msg['From'] = formataddr(('TatySMTPDocs', self.EMAIL)) # Remetente
+            msg['From'] = formataddr(('NomeRemetente', self.EMAIL)) # Remetente
             msg['To'] = destinatario
             msg['Cc'] = encaminhado
             msg['Subject'] = (anexo.stem if Path(anexo).is_file() else anexo.name).replace('_', '/') # Assunto
