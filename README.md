@@ -1,4 +1,4 @@
-# AutomacaoEmail
+# Automação de Email
 
 Este projeto:
  - Monitora uma estrutura de diretórios onde os arquivos a serem enviados são organizados por e-mails de destinatários e cópia.
